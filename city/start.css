@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow:hidden;
+}
+/* GLOBAL STYLES */
+body {
+    background: black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+ul{
+    list-style: none;
+}
+img {
+    height: 100%;
+}
+.zoom{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+.typewriter{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 25%;
+    z-index: -1;
+    font-size: 1rem;
+}
+.language{
+    padding: 5px;
+    background: black;
+    border: 1px white solid;
+}
+.select{
+    background: white;
+    color: black;
+}
+
+@keyframes zoom{
+    from{
+        transform: scale(1);
+    }
+    to{
+        margin-top: 108vh;
+        transform: scale(6);
+    }
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter .lign1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /*letter-spacing: .15em;*/
+    animation: 
+    typing 3s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+    from { 
+        width: 0 
+    }
+    to {
+        width: 100% 
+    }
+}
+  

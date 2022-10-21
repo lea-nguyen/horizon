@@ -1,0 +1,163 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+nav{
+    display: flex;
+    padding : 5px;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(50,50,50,35%);
+    font-family: 'rock';
+    width: 100%;
+}
+nav a {
+    margin: 5px 15px;
+    padding: 3px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+}
+
+nav a:hover{
+    color: white;
+    transition: ease 0.4s;
+}
+
+#platform_c{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgb(196,79,215);
+    background: linear-gradient(0deg, rgba(196,79,215,1) 0%, rgba(235,123,74,1) 100%);
+    left: 0;
+}
+#city img:nth-of-type(1){
+    height: 100vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+#city img:nth-of-type(2){
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#character{
+    position: absolute;
+    background-image: url("images/character/character_closed.png");
+    background-position-x: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    height: 17vh;
+    width: 20vh;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+#platform_r{
+    height: 480px;
+    display: flex;
+    width: 100vw;
+ }
+
+ #platform_r #character {
+    background-image: url("images/character/character_closed.png");
+    top: 65%;
+    height: 90px;
+    width: 70px;
+    transform: none;
+    left: 50%;
+    transform: translateX(-50%);
+
+ }
+
+#room img{
+    height: 100%;
+    width: auto;
+    z-index: 0;
+    object-fit: contain;
+}
+
+#room {
+    height: 480px;
+    width: auto;
+    margin: auto;
+    display: inline-block;
+    margin: auto;
+    position: relative;
+}
+
+.livre, .livre_2 {
+    width: 480px;
+    height: 480px;
+    overflow-y: auto;
+    background-color: rgba(255,255,255,90%);
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    padding: 15px;
+    display: none;
+    position: absolute;
+    z-index: 5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+
+
+
+iframe {
+    margin: auto;
+    display: block;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+}
+
+h1 {
+    font-size: 1.1rem;
+}
+h2 {
+    font-size: 0.9rem;
+}
+li {
+    font-size: 0.8rem;
+}
+p {
+    font-size: 0.8rem;
+}
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+};
+
+
